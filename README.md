@@ -13,7 +13,7 @@ Go to the source directory of the workspace
   
 Clone this repository
   ```
-  $ git clone https://github.com/dpflores/diff-control
+  $ git clone https://github.com/dpflores/diff_control
   ```
 Create a  directory for the turtlebot3 packages and clone them
   ```
