@@ -39,12 +39,12 @@ In the workspace folder, launch the following:
   $ export TURTLEBOT3_MODEL=waffle
   $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
   ```
-We can try a better enviroment like a house (look at the packages to see the other options):
+We can try a better environment like a house (look at the packages to see the other options):
   ```
   $ export TURTLEBOT3_MODEL=waffle
   $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
   ``` 
-While the enviroment launched, we can launch in a new terminal the teloperation control, which allows us to move the robot with the keys
+While the environment is launched, we can launch in a new terminal the teleoperation control, which allows us to move the robot with the keys
   ```
   $ export TURTLEBOT3_MODEL=waffle
   $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -58,7 +58,7 @@ You can look for the other examples in the turtlebot packages. Feel free to use 
   
 ## Day 1: Sensors and visualization
 
-To watch the sensor messages, the odometry of the robot and other visualization, we need to use Rviz (http://wiki.ros.org/rviz). In another terminal run
+To watch the sensor messages, the odometry of the robot, and other visualization, we need to use Rviz (http://wiki.ros.org/rviz). In another terminal run
 
   ```
   $ rosrun rviz rviz
@@ -72,7 +72,7 @@ Then, in the "Fixed Frame" option at the upper left, select "odom" instead of "m
 
 Now that you can see the robot, let's see what he can see.
 
-You can know the sensors by looking at the robot description in the .gazebo file, search sensors and getting the topic name.
+You can know the sensors by looking at the robot description in the .gazebo file, searching for sensors, and getting the topic name.
 From the topics, we can see that we can add the following visualizations in Rviz.
 
 <ul>
@@ -81,14 +81,15 @@ From the topics, we can see that we can add the following visualizations in Rviz
   <li>Depth camera</li>
   <li>Depth point cloud</li>
 </ul>
-When you select a visualization, make sure that you selected the appropiate topic for it. You can save your Rviz configuration to use it again.
+When you select a visualization, make sure that you selected the appropriate topic for it. You can save your Rviz configuration to use it again.
 
 If we want to use that topic in our code implementation, we need the type of the message, you can use the following command to know about that topic and the respective message.
 
   ```
   $ rostopic info /topic_name
   ``` 
-Now you know how to implement a robot like the turtlebot3, look at the sensors messages and visualize them in Rviz. In the next day, we are going to implement the orientation control of the turtlebot3 with a PID controller, a well common controller in control systems theory.
+Now you know how to implement a robot like the turtlebot3, look at the sensor's messages and visualize them in Rviz. On the next day, we are going to implement the orientation control of the turtlebot3 with a PID controller, a well common controller in control systems theory.
 
 ## Day 2: Orientation control
 
+Working on it
