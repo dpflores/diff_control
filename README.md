@@ -1,4 +1,4 @@
-diff-control
+diff_control
 ===
 
 ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using a ubuntu 20.04 distribution with ROS noetic installed or with a free account in https://www.theconstructsim.com/, where you can emulate a ROS environment with the required resources.
@@ -58,7 +58,7 @@ You can look for the other examples in the turtlebot packages. Feel free to use 
   
 ## Day 1: Sensors and visualization
 
-To watch the sensor messages, the odometry of the robot and other visualization, we need to use Rviz. In another terminal run
+To watch the sensor messages, the odometry of the robot and other visualization, we need to use Rviz (http://wiki.ros.org/rviz). In another terminal run
 
   ```
   $ rosrun rviz rviz
@@ -92,7 +92,3 @@ Now you know how to implement a robot like the turtlebot3, look at the sensors m
 
 ## Day 2: Orientation control
 
-  Working
-owowowo
-jajsja
-editando en github jajsjas

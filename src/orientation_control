@@ -31,7 +31,7 @@ from turtle import distance
 import rospy
 from geometry_msgs.msg import Twist
 from markers import *
-
+import os
 import numpy as np
 
 
@@ -63,6 +63,8 @@ phi_d=0
 t = 0
 error = 0
 
+POSITION_OUTPUT_FILE = os.path.dirname(os.path.realpath(__file__)) + "/data/position.txt"
+
 #Subscriber functions
 def on_odometry(msg):
   global x,y, phi, x_d, y_d, phi_d, t, error
@@ -86,7 +88,7 @@ def clear_file(filename):
 
 def write_to_file(t, xd, yd, phid, x, y, phi, error):
 
-  with open('src/diff_control/src/data/position.txt', 'a') as file:
+  with open(POSITION_OUTPUT_FILE, 'a') as file:
     file.write(str(t) + ", " + str(xd) + ", " + str(yd) + ", " + str(phid) + ", " + str(x) + ", " + str(y) + ", " + str(phi) + ", " + str(error) +"\n")
     file.close()
               
@@ -143,7 +145,7 @@ if __name__=="__main__":
     turtlebot3_model = rospy.get_param("model", "burger")
     
     # Init and clear files
-    clear_file('src/diff_control/src/data/position.txt')
+    clear_file(POSITION_OUTPUT_FILE)
     
 
     # Loop rate (in Hz)
@@ -207,3 +209,4 @@ if __name__=="__main__":
     twist.linear.x = 0.0; twist.linear.y = 0.0; twist.linear.z = 0.0
     twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = 0.0
     pub.publish(twist)
+    

@@ -4,13 +4,16 @@
 
 import matplotlib.pyplot as plt
 from matplotlib import style
+import os
+
+POSITION_OUTPUT_FILE = os.path.dirname(os.path.realpath(__file__)) + "/data/position.txt"
 
 fig = plt.figure()
 ax1 = fig.add_subplot(2,1,1)
 ax2 = fig.add_subplot(2,1,2)
 
 
-graph_data = open('data/position.txt','r').read()
+graph_data = open(POSITION_OUTPUT_FILE,'r').read()
 lines = graph_data.split('\n')
 xd = 0
 yd = 0

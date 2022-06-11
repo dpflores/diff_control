@@ -5,6 +5,9 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib import style
+import os
+
+POSITION_OUTPUT_FILE = os.path.dirname(os.path.realpath(__file__)) + "/data/position.txt"
 
 style.use('fivethirtyeight')
 
@@ -14,7 +17,7 @@ ax2 = fig.add_subplot(3,1,2)
 ax3 = fig.add_subplot(3,1,3)
 
 def animate(i):
-    graph_data = open('data/position.txt','r').read()
+    graph_data = open(POSITION_OUTPUT_FILE,'r').read()
     lines = graph_data.split('\n')
     xd = 0
     yd = 0
