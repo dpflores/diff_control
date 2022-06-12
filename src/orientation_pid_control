@@ -56,7 +56,7 @@ def on_odometry(msg):
   phi = yaw
   if PLOTTING == True:
     write_to_file(t, x_d, y_d, phi_d, x, y, phi, error)
-  t+=1
+  t+=1/30
 
 
 # General functions
@@ -128,7 +128,7 @@ if __name__=="__main__":
     
 
     # Loop rate (in Hz)
-    rate = rospy.Rate(10)
+    rate = rospy.Rate(30)
 
     # Desired position and heading
     x_d = -5.0

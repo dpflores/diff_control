@@ -12,9 +12,9 @@ POSITION_OUTPUT_FILE = os.path.dirname(os.path.realpath(__file__)) + "/data/posi
 style.use('fivethirtyeight')
 
 fig = plt.figure()
-ax1 = fig.add_subplot(3,1,1)
-ax2 = fig.add_subplot(3,1,2)
-ax3 = fig.add_subplot(3,1,3)
+ax1 = fig.add_subplot(2,2,2)
+ax2 = fig.add_subplot(2,2,1)
+ax3 = fig.add_subplot(2,2,3)
 
 def animate(i):
     graph_data = open(POSITION_OUTPUT_FILE,'r').read()
@@ -42,13 +42,19 @@ def animate(i):
     ax1.clear()
     ax1.plot(float(xd), float(yd), marker="*", markersize=20, markeredgecolor="red", markerfacecolor="red")
     ax1.plot(xs, ys, 'b-')
+    ax1.set_xlabel("x position (m)")
+    ax1.set_ylabel("y position (m)")
 
     ax2.clear()
     ax2.plot(t_s, phid_s, 'r-')
     ax2.plot(t_s, phi_s, 'b-')
+    ax2.set_xlabel("time (s)")
+    ax2.set_ylabel("Heading angle (rad)")
 
     ax3.clear()
     ax3.plot(t_s, error_s, 'g-')
+    ax3.set_xlabel("time (s)")
+    ax3.set_ylabel("error")
 
 ani = animation.FuncAnimation(fig, animate, interval=10)
 plt.show()
