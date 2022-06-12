@@ -143,4 +143,6 @@ Now, for the last node, we implemented a PID controller script using [Object Ori
   $ rosrun diff_control orientation_pid_control
   ``` 
 
-You are able to change the parameters of the PID controller and even implement other types of controller. A PID controller works good in our case, because of the linear relation of the output and input; however, this is not the case in most of the situations, so you can look for [nonlinear controllers theory](https://www.youtube.com/watch?v=LpoGv3gIeG0&list=PLMFfRskH3EaqITi8mu6mKWAq2T_lrqwq9). Good luck!
+You are able to change the parameters of the PID controller and even implement other types of controller. A PID controller works good in our case, because of the linear relation of the output and input; however, this is not the case in most of the situations, so you can look for [nonlinear controllers theory](https://www.youtube.com/watch?v=LpoGv3gIeG0&list=PLMFfRskH3EaqITi8mu6mKWAq2T_lrqwq9).
+
+If you are more interested in self-driving cars, a type of autonomous vehicles, I strongly recommend this [set of courses](https://www.coursera.org/specializations/self-driving-cars?) from Toronto University in Coursera Good luck!
