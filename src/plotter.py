@@ -3,7 +3,6 @@
 # File: live_plotter
 
 import matplotlib.pyplot as plt
-from matplotlib import style
 import os
 
 POSITION_OUTPUT_FILE = os.path.dirname(os.path.realpath(__file__)) + "/data/position.txt"
