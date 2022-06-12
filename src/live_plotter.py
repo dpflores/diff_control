@@ -1,6 +1,6 @@
 # Liv plotter for ROS Course 
 # Author: Del Piero Flores
-# File: live_plotter
+# File: live_plotter.py
 
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
