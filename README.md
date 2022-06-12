@@ -92,7 +92,7 @@ Now you know how to implement a robot like the turtlebot3, look at the sensor's 
 
 ## Day 2: Orientation control
 
-Yesterday, we learned how to simulate and watch our robot, and its sensors, now tis time to control it.
+Yesterday, we learned how to simulate and watch our robot, and its sensors, now it's time to control it.
 
 First, let's update the repository to get any changes that have been made
 
@@ -110,26 +110,26 @@ First, launch the simulation environment
   ``` 
 It is important to understand how publishers and subscribers work (http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
 
-The `start_node` is a simple node to command the linear and agular speeds of the turtlebot using a publisher for the `cmd_vel` topic.
+The `start_node` is a simple node to command the linear and angular speeds of the turtlebot using a publisher for the `cmd_vel` topic.
 
   ```
   $ rosrun diff_control start_node
   ``` 
-Now to start our control, we can use the `orientation_control` node. This node subscribes to the `/odom` topic to get the current pose of the robot, uses a desired position that you can set and apply a proportional controller for orientation. Also, it writes a file with neccesary data to track the position and how our controller is working.
+Now to start our control, we can use the `orientation_control` node. This node subscribes to the `/odom` topic to get the current pose of the robot, uses a desired position that you can set and apply a proportional controller for orientation. Also, it writes a file with necessary data to track the position and how our controller is working.
 
-In order to visualize the data while the node is running, you can run the live plotter. In the `src` directory of the package, run
+To visualize the data while the node is running, you can start the live plotter. In the `src` directory of the package, run
 
   ```
   $ python3 live_plotter.py
   ``` 
 
-You will see a plot, which might have some traces due to the previous data storaged, but it will be updated while you run the node. 
+You will see a plot, which might have some traces due to the previous data storage, but it will be updated while you run the node. 
 
   ```
   $ rosrun diff_control orientation_control
   ``` 
 
-This, will control the vehicle with simple proportional controller for the orientation and position.
+This will control the vehicle with a simple proportional controller for the orientation and position.
 
 You can also analyze the results after the simulation, running the plotter file in the `src` directory of the package.
 
@@ -137,12 +137,14 @@ You can also analyze the results after the simulation, running the plotter file 
   $ python3 plotter.py
   ``` 
 
-Now, for the last node, we implemented a PID controller script using [Object Oriented Programming](https://pythonprogramming.net/object-oriented-programming-introduction-intermediate-python-tutorial/). It is important to know the theory about this linear controller in order to know how it works. 
+Now, for the last node, we implemented a PID controller script using [Object Oriented Programming](https://pythonprogramming.net/object-oriented-programming-introduction-intermediate-python-tutorial/). It is important to know the theory about this linear controller to know how it works. 
 
  ```
   $ rosrun diff_control orientation_pid_control
   ``` 
 
-You are able to change the parameters of the PID controller and even implement other types of controller. A PID controller works good in our case, because of the linear relation of the output and input; however, this is not the case in most of the situations, so you can look for [nonlinear controllers theory](https://www.youtube.com/watch?v=LpoGv3gIeG0&list=PLMFfRskH3EaqITi8mu6mKWAq2T_lrqwq9).
+You can change the parameters of the PID controller and even implement other control types. A PID controller works well in our case, because of the linear relation of the output and input; however, this is not the case in most situations, so you can look for [nonlinear controllers theory](https://www.youtube.com/watch?v=LpoGv3gIeG0&list=PLMFfRskH3EaqITi8mu6mKWAq2T_lrqwq9).
 
-If you are more interested in self-driving cars, a type of autonomous vehicles, I strongly recommend this [set of courses](https://www.coursera.org/specializations/self-driving-cars?) from Toronto University in Coursera Good luck!
+If you are more interested in self-driving cars, a type of autonomous vehicle, I strongly recommend you this [set of courses](https://www.coursera.org/specializations/self-driving-cars?) from Toronto University in Coursera.
+
+Good luck!
