@@ -1,11 +1,11 @@
 diff_control
 ===
 
-ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using a ubuntu 20.04 distribution with ROS noetic installed or with a free account in https://www.theconstructsim.com/, where you can emulate a ROS environment with the required resources.
+ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using a ubuntu 20.04 distribution with ROS noetic installed or with a free account in [TheConstruct](https://www.theconstructsim.com/), where you can emulate a ROS environment with the required resources.
 
 ## Installation
 
-This will assume that you already have a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace).
+This will assume that you already have a [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace).
 Go to the source directory of the workspace
   ```
   $ roscd; cd ../src
@@ -49,7 +49,7 @@ While the environment is launched, we can launch in a new terminal the teleopera
   $ export TURTLEBOT3_MODEL=waffle
   $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
   ``` 
-If you want to reset the starting position, which is important when you make multiple tests, you can use a ROS service (http://wiki.ros.org/rosservice)
+If you want to reset the starting position, which is important when you make multiple tests, you can use a [ROS service](http://wiki.ros.org/rosservice)
   ```
   $ rosservice call /gazebo/reset_simulation
   ``` 
@@ -58,7 +58,7 @@ You can look for the other examples in the turtlebot packages. Feel free to use 
   
 ## Day 1: Sensors and visualization
 
-To watch the sensor messages, the odometry of the robot, and other visualization, we need to use Rviz (http://wiki.ros.org/rviz). In another terminal run
+To watch the sensor messages, the odometry of the robot, and other visualization, we need to use [Rviz](http://wiki.ros.org/rviz). In another terminal run
 
   ```
   $ rosrun rviz rviz
@@ -108,7 +108,7 @@ First, launch the simulation environment
   $ export TURTLEBOT3_MODEL=waffle
   $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
   ``` 
-It is important to understand how publishers and subscribers work (http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
+It is important to understand how [publishers and subscribers](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) work 
 
 The `start_node` is a simple node to command the linear and angular speeds of the turtlebot using a publisher for the `cmd_vel` topic.
 
