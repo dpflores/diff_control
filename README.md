@@ -147,4 +147,4 @@ You can change the parameters of the PID controller and even implement other con
 
 If you are more interested in self-driving cars, a type of autonomous vehicle, I strongly recommend you this [set of courses](https://www.coursera.org/specializations/self-driving-cars?) from Toronto University in Coursera.
 
-Good luck!
+Good luck! owo
