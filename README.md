@@ -94,7 +94,7 @@ Now you know how to implement a robot like the turtlebot3, look at the sensor's 
 
 Yesterday, we learned how to simulate and watch our robot, and its sensors, now it's time to control it.
 
-First, let's update the repository to get any changes that have been made
+First, let's update the repository to get any changes that have been made. In the `diff_control` directory, run
 
   ```
   $ git pull
