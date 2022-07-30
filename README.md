@@ -1,7 +1,7 @@
 diff_control
 ===
 
-ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using a ubuntu 20.04 distribution with ROS noetic installed or with a free account in [TheConstruct](https://www.theconstructsim.com/), where you can emulate a ROS environment with the required resources.
+ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using an Ubuntu 20.04 distribution with ROS noetic installed or with a free account in [TheConstruct](https://www.theconstructsim.com/), where you can emulate a ROS environment with the required resources.
 
 ## Installation
 
