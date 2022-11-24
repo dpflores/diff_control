@@ -53,4 +53,3 @@ ax3.set_ylabel("error")
 
 plt.show()
 
-#uncomentario
