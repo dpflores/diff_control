@@ -3,6 +3,11 @@ diff_control
 
 ROS package for the control and visualization of the turtlebot3 using python. You can follow these instructions either using an Ubuntu 20.04 distribution with ROS noetic installed or with a free account in [TheConstruct](https://www.theconstructsim.com/), where you can emulate a ROS environment with the required resources.
 
+You can follow the tutorial in Spanish with the following links:
+
+[Taller: Introducción a los vehículos autónomos en ROS | Dia 1](https://www.youtube.com/watch?v=vtfcCDMhpk8&t=542s)
+[Taller: Introducción a los vehículos autónomos en ROS | Dia 2](https://www.youtube.com/watch?v=TScjs6bCX38&t=150s)
+
 ## Installation
 
 This will assume that you already have a [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace).
