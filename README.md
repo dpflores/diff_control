@@ -6,6 +6,7 @@ ROS package for the control and visualization of the turtlebot3 using python. Yo
 You can follow the tutorial in Spanish with the following links:
 
 [Taller: Introducción a los vehículos autónomos en ROS | Dia 1](https://www.youtube.com/watch?v=vtfcCDMhpk8&t=542s)
+
 [Taller: Introducción a los vehículos autónomos en ROS | Dia 2](https://www.youtube.com/watch?v=TScjs6bCX38&t=150s)
 
 ## Installation
